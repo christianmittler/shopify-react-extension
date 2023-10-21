@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "tutorial-react-extension"
+client_id = "9e0281848dd92f838609737754329f62"
+application_url = "https://cordless-corrected-wear-humor.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://cordless-corrected-wear-humor.trycloudflare.com/auth/callback",
+  "https://cordless-corrected-wear-humor.trycloudflare.com/auth/shopify/callback",
+  "https://cordless-corrected-wear-humor.trycloudflare.com/api/auth/callback",
+  "https://cordless-corrected-wear-humor.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "appointment-booking-test.myshopify.com"
