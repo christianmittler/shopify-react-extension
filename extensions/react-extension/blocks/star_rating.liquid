@@ -1,3 +1,6 @@
+{% # theme-check-disable AssetSizeJavaScript %}
+<script src="{{ 'react-extension.js' | asset_url }}" defer></script>
+{% # theme-check-enable AssetSizeJavaScript %}
 <span>This is liquid</span>
 <div id="container"></div>
 
@@ -5,7 +8,6 @@
   {
     "name": "React Extension Tutorial",
     "target": "section",
-    "javascript": "react-extension.js",
     "settings": []
   }
 {% endschema %}
